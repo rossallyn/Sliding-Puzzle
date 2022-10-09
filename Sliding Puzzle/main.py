@@ -280,7 +280,7 @@ def generateNewPuzzle(numSlides):
     lastMove = None
     for i in range(numSlides):
         move = getRandomMove(board, lastMove)
-        slideAnimation(board, move, 'Creating New Puzzle',animationSpeed=int(TILESIZE / 3))
+        slideAnimation(board, move, 'Shuffle',animationSpeed=int(TILESIZE / 2))
         makeMove(board, move)
         sequence.append(move)
         lastMove = move
